@@ -1,0 +1,23 @@
+.tmp
+.DS_Store
+project.godot
+test-scenes
+
+/.import
+/.vscode
+/default_env.tres
+/default_bus_layout.tres
+/icon.svg
+/icon.png
+/icon.png.import
+/icon.svg.import
+export_presets.cfg
+
+# Only add dialogic plugin 
+/addons/*
+!/addons/dialogic
+# Place test project files here
+/test-project
+
+# Godot 4 specific
+.godot

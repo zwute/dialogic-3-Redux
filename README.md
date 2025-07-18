@@ -18,9 +18,11 @@
 
 ## Version
 
-Dialogic 3 Redux **requires at least Godot 4.3**.
+Dialogic 3 Redux **requires at least Godot 4.4.1**.
 
 [If you are looking for the Godot 3.x version (Dialogic 1.x) you can find it here.](https://github.com/dialogic-godot/dialogic-1)
+
+[If you are looking for the Godot 4.x version (Dialogic 2.x) you can find it here.](https://github.com/dialogic-godot/dialogic)
 
 ## Installation
 Follow the installation instructions on our [Getting Started](https://docs.dialogic.pro/getting-started.html#1-installation--activation) documentation.

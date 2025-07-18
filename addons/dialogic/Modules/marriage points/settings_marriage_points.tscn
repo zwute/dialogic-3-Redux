@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://d9p6k3m8x5n2c"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Modules/marriage points/settings_marriage_points.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dbpkta2tjsqim" path="res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn" id="2"]
+
+[node name="MarriagePoints" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Title" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Title"]
+layout_mode = 2
+theme_type_variation = &"DialogicSettingsSection"
+text = "Marriage Points Settings"
+
+[node name="HintTooltip" parent="Title" instance=ExtResource("2")]
+layout_mode = 2
+tooltip_text = "Configure marriage thresholds and point requirements."
+hint_text = "Configure marriage thresholds and point requirements."
+
+[node name="DefaultThreshold" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="DefaultThreshold"]
+layout_mode = 2
+text = "Default Marriage Threshold:"
+custom_minimum_size = Vector2(200, 0)
+
+[node name="DefaultThresholdSpinBox" type="SpinBox" parent="DefaultThreshold"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1000.0
+value = 100.0
+
+[node name="CharacterThresholds" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="ThresholdsLabel" type="Label" parent="CharacterThresholds"]
+layout_mode = 2
+text = "Character-Specific Thresholds:"
+
+[node name="ThresholdsList" type="VBoxContainer" parent="CharacterThresholds"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AddThreshold" type="HBoxContainer" parent="CharacterThresholds"]
+layout_mode = 2
+
+[node name="CharacterInput" type="LineEdit" parent="CharacterThresholds/AddThreshold"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Character ID..."
+
+[node name="ThresholdInput" type="SpinBox" parent="CharacterThresholds/AddThreshold"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1000.0
+value = 100.0
+
+[node name="AddButton" type="Button" parent="CharacterThresholds/AddThreshold"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Add"

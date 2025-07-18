@@ -1,0 +1,107 @@
+[gd_scene load_steps=4 format=3 uid="uid://e7q9l4n6m3k8d"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Modules/relationship points/settings_relationship_points.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dbpkta2tjsqim" path="res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn" id="2"]
+
+[node name="RelationshipPoints" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Title" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Title"]
+layout_mode = 2
+theme_type_variation = &"DialogicSettingsSection"
+text = "Relationship Points Settings"
+
+[node name="HintTooltip" parent="Title" instance=ExtResource("2")]
+layout_mode = 2
+tooltip_text = "Configure relationship categories with min/max limits."
+hint_text = "Configure relationship categories with min/max limits."
+
+[node name="CategoriesContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="CategoriesLabel" type="Label" parent="CategoriesContainer"]
+layout_mode = 2
+text = "Relationship Categories:"
+
+[node name="Trust" type="HBoxContainer" parent="CategoriesContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CategoriesContainer/Trust"]
+layout_mode = 2
+text = "Trust:"
+custom_minimum_size = Vector2(80, 0)
+
+[node name="TrustMin" type="SpinBox" parent="CategoriesContainer/Trust"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = -1000.0
+max_value = 1000.0
+value = -100.0
+
+[node name="Label2" type="Label" parent="CategoriesContainer/Trust"]
+layout_mode = 2
+text = "to"
+
+[node name="TrustMax" type="SpinBox" parent="CategoriesContainer/Trust"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = -1000.0
+max_value = 1000.0
+value = 100.0
+
+[node name="Romance" type="HBoxContainer" parent="CategoriesContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CategoriesContainer/Romance"]
+layout_mode = 2
+text = "Romance:"
+custom_minimum_size = Vector2(80, 0)
+
+[node name="RomanceMin" type="SpinBox" parent="CategoriesContainer/Romance"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = -1000.0
+max_value = 1000.0
+
+[node name="Label2" type="Label" parent="CategoriesContainer/Romance"]
+layout_mode = 2
+text = "to"
+
+[node name="RomanceMax" type="SpinBox" parent="CategoriesContainer/Romance"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = -1000.0
+max_value = 1000.0
+value = 100.0
+
+[node name="Respect" type="HBoxContainer" parent="CategoriesContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CategoriesContainer/Respect"]
+layout_mode = 2
+text = "Respect:"
+custom_minimum_size = Vector2(80, 0)
+
+[node name="RespectMin" type="SpinBox" parent="CategoriesContainer/Respect"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = -1000.0
+max_value = 1000.0
+value = -50.0
+
+[node name="Label2" type="Label" parent="CategoriesContainer/Respect"]
+layout_mode = 2
+text = "to"
+
+[node name="RespectMax" type="SpinBox" parent="CategoriesContainer/Respect"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = -1000.0
+max_value = 1000.0
+value = 100.0

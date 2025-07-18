@@ -10,7 +10,7 @@ enum UpdateCheckResult {UPDATE_AVAILABLE, UP_TO_DATE, NO_ACCESS}
 enum DownloadResult {SUCCESS, FAILURE}
 enum ReleaseState {ALPHA, BETA, STABLE}
 
-const REMOTE_RELEASES_URL := "https://api.github.com/repos/dialogic-godot/dialogic/releases"
+const REMOTE_RELEASES_URL := "https://github.com/zwute/dialogic-3-Redux/releases"
 const TEMP_FILE_NAME := "user://temp.zip"
 
 var current_version := ""
@@ -188,3 +188,6 @@ func _on_update_check_completed(result:int):
 	version_indicator.add_theme_color_override('font_hover_color', result_color.lightened(0.5))
 	version_indicator.add_theme_color_override('font_pressed_color', result_color)
 	version_indicator.add_theme_color_override('font_focus_color', result_color)
+
+
+

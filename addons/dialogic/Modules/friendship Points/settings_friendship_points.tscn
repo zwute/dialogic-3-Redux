@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8n4m7q5r2k9b"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Modules/friendship Points/settings_friendship_points.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dbpkta2tjsqim" path="res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn" id="2"]
+
+[node name="FriendshipPoints" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Title" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Title"]
+layout_mode = 2
+theme_type_variation = &"DialogicSettingsSection"
+text = "Friendship Points Settings"
+
+[node name="HintTooltip" parent="Title" instance=ExtResource("2")]
+layout_mode = 2
+tooltip_text = "Configure friendship level thresholds and point ranges."
+hint_text = "Configure friendship level thresholds and point ranges."
+
+[node name="LevelsContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="LevelsLabel" type="Label" parent="LevelsContainer"]
+layout_mode = 2
+text = "Friendship Levels:"
+
+[node name="Stranger" type="HBoxContainer" parent="LevelsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="LevelsContainer/Stranger"]
+layout_mode = 2
+text = "Stranger:"
+custom_minimum_size = Vector2(120, 0)
+
+[node name="StrangerPoints" type="SpinBox" parent="LevelsContainer/Stranger"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1000.0
+
+[node name="Acquaintance" type="HBoxContainer" parent="LevelsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="LevelsContainer/Acquaintance"]
+layout_mode = 2
+text = "Acquaintance:"
+custom_minimum_size = Vector2(120, 0)
+
+[node name="AcquaintancePoints" type="SpinBox" parent="LevelsContainer/Acquaintance"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1000.0
+value = 10.0
+
+[node name="Friend" type="HBoxContainer" parent="LevelsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="LevelsContainer/Friend"]
+layout_mode = 2
+text = "Friend:"
+custom_minimum_size = Vector2(120, 0)
+
+[node name="FriendPoints" type="SpinBox" parent="LevelsContainer/Friend"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1000.0
+value = 25.0
+
+[node name="GoodFriend" type="HBoxContainer" parent="LevelsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="LevelsContainer/GoodFriend"]
+layout_mode = 2
+text = "Good Friend:"
+custom_minimum_size = Vector2(120, 0)
+
+[node name="GoodFriendPoints" type="SpinBox" parent="LevelsContainer/GoodFriend"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1000.0
+value = 50.0
+
+[node name="BestFriend" type="HBoxContainer" parent="LevelsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="LevelsContainer/BestFriend"]
+layout_mode = 2
+text = "Best Friend:"
+custom_minimum_size = Vector2(120, 0)
+
+[node name="BestFriendPoints" type="SpinBox" parent="LevelsContainer/BestFriend"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1000.0
+value = 75.0

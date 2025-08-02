@@ -21,7 +21,7 @@
 
 ## Version
 
-Dialogic 3 Redux **requires at least Godot 4.4.1**.
+Dialogic 3 **requires at least Godot 4.4.1**.
 
 [If you are looking for the Godot 3.x version (Dialogic 1.x) you can find it here.](https://github.com/dialogic-godot/dialogic-1)
 
@@ -66,4 +66,4 @@ Changelogs will accommodate for these changes and inform you on how to update yo
 credit to official build: https://github.com/dialogic-godot/dialogic
 
 but this is going to be a modified version
-this is to add features that are missing from part 2 think of this is part 3.
+this is to add features that are missing from dialogic 2 that I wanted to add for dialogic 3 just some quality of life improvements and some changes.

@@ -38,7 +38,7 @@ You can find the official documentation of Dialogic here: [Dialogic Documentatio
 There is a Class Reference as well: [Class Reference](https://docs.dialogic.pro/class_index.html)
 
 
-## Connect with us!
+## credit to official Connect with godot of Dialogs!
 If you need help or want to share your Dialogic projects, take a look at the following options:
 
 - Ask questions, or report bugs on our [Discord](https://discord.gg/DjcDgDaTMe)

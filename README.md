@@ -67,3 +67,4 @@ credit to official build: https://github.com/dialogic-godot/dialogic
 
 but this is going to be a modified version
 this is to add features that are missing from dialogic 2 that I wanted to add for dialogic 3 just some quality of life improvements and some changes.
+I am no in association with the dialogic Gadot team at all I'm not a part of their team.

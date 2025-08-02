@@ -2,7 +2,7 @@
   <img width="1280" alt="cover" src="https://user-images.githubusercontent.com/2206700/189457799-6327bab0-b085-4421-8640-6a18e395d17d.png">
 </p>
 
-<h1 align="center">Dialogic 3 Redux</h1>
+<h1 align="center">Dialogic 3</h1>
 
 <p align="center">
   Create <b>Dialogs</b>, <b>Visual Novels</b>, <b>RPGs</b>, and <b>manage Characters</b> with Godot to create your Game!

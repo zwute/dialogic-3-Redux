@@ -8,7 +8,7 @@
   Create <b>Dialogs</b>, <b>Visual Novels</b>, <b>RPGs</b>, and <b>manage Characters</b> with Godot to create your Game!
 </p>
 <p align="center">
-  there are some complete key differences dialogic 2 has 27 modules while compared to dialogic 3 Redux has 77 modules in total however they are not all there and they're still being tested.
+  there are some complete key differences dialogic 2 has 27 modules while compared to dialogic 3 has 77 modules in total however they are not all there and they're still being tested.
 </p>
 
 ## Table of Contents
